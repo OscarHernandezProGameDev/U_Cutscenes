@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cc421da483ed06c49933077a621bff25, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,13 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18348408, g: 0.22905242, b: 0.30580258, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -196,6 +192,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -486,6 +484,119 @@ Transform:
   m_Children: []
   m_Father: {fileID: 340748221}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1464140906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464140907}
+  - component: {fileID: 1464140909}
+  - component: {fileID: 1464140908}
+  m_Layer: 0
+  m_Name: MagicOrb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464140907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464140906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0005, y: 0.0005, z: 0.0005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3546695097652225972}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!73398921 &1464140908
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464140906}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!2083052967 &1464140909
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464140906}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: fd4d3dc039838d64eb2b3a6d51d2732f, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array: []
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array: []
+    m_Bool:
+      m_Array: []
 --- !u!1001 &1773178914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -618,9 +729,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783606724}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 0
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 4
   m_Range: 2.18
@@ -736,9 +846,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909703221}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.61
   m_Range: 10
@@ -1924,6 +2033,7 @@ Transform:
   - {fileID: 5412635733574622830}
   - {fileID: 5621245917542949198}
   - {fileID: 3464849106434396825}
+  - {fileID: 1464140907}
   m_Father: {fileID: 5264613131607704471}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3557199030995443282
@@ -1960,7 +2070,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3585103596566787624
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1974,6 +2084,7 @@ Animator:
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -3277,6 +3388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7431208136048602194}
   - component: {fileID: 3585103596566787624}
+  - component: {fileID: 7812378393904363241}
   m_Layer: 0
   m_Name: Wizard_Humanoid_M
   m_TagString: Untagged
@@ -3284,6 +3396,113 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7812378393904363241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812378393904363240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boneShape: 1
+  drawBones: 1
+  drawTripods: 0
+  boneSize: 1
+  tripodSize: 1
+  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
+  m_Transforms:
+  - {fileID: 1374546917013690817}
+  - {fileID: 1005087853064434817}
+  - {fileID: 7466262107429379427}
+  - {fileID: 6145516620192906886}
+  - {fileID: 2713363870705553450}
+  - {fileID: 4111531960727715148}
+  - {fileID: 8461871216079476976}
+  - {fileID: 4868121961652133803}
+  - {fileID: 8773762178653581989}
+  - {fileID: 944394562251779148}
+  - {fileID: 6487219180616001012}
+  - {fileID: 5137646634045616417}
+  - {fileID: 5682745652830750212}
+  - {fileID: 8919687662559582675}
+  - {fileID: 5676086831054589251}
+  - {fileID: 4429563301252511006}
+  - {fileID: 5264613131607704471}
+  - {fileID: 3546695097652225972}
+  - {fileID: 3968787661165476997}
+  - {fileID: 7862135774966095826}
+  - {fileID: 3358716973476843659}
+  - {fileID: 3525789056397885607}
+  - {fileID: 4452415047127866322}
+  - {fileID: 2485781605039834402}
+  - {fileID: 4968620809714960683}
+  - {fileID: 306916728371285828}
+  - {fileID: 1598362300136769343}
+  - {fileID: 5412635733574622830}
+  - {fileID: 8994990650917774915}
+  - {fileID: 241258923936443783}
+  - {fileID: 465895582681947836}
+  - {fileID: 1809276825236981005}
+  - {fileID: 5621245917542949198}
+  - {fileID: 4728538446917692609}
+  - {fileID: 7053959336803612016}
+  - {fileID: 7254665952376857096}
+  - {fileID: 8732608700409659242}
+  - {fileID: 3464849106434396825}
+  - {fileID: 1814626827035635803}
+  - {fileID: 1929097244198641398}
+  - {fileID: 6817116714008994356}
+  - {fileID: 1749598978531247478}
+  - {fileID: 2226502017220352844}
+  - {fileID: 1432960166353226695}
+  - {fileID: 7797567158237355641}
+  - {fileID: 3169025719371681765}
+  - {fileID: 2681592172005406286}
+  - {fileID: 1252443225525961092}
+  - {fileID: 8865917569286616426}
+  - {fileID: 7702988319646341728}
+  - {fileID: 2104273928104636956}
+  - {fileID: 7221976583518779422}
+  - {fileID: 9138991395525906971}
+  - {fileID: 620834452247425153}
+  - {fileID: 9116187835003989703}
+  - {fileID: 8574382537506597792}
+  - {fileID: 6719453348848264689}
+  - {fileID: 2626300720287301010}
+  - {fileID: 3832734112007252178}
+  - {fileID: 137587370806061776}
+  - {fileID: 4265165532437560749}
+  - {fileID: 7730342657262781720}
+  - {fileID: 6890017852566170773}
+  - {fileID: 3009517668655361881}
+  - {fileID: 8861106903573839239}
+  - {fileID: 2380059611586861049}
+  - {fileID: 4139556196721410291}
+  - {fileID: 763250973228657366}
+  - {fileID: 1718136482522691387}
+  - {fileID: 7185489373989892292}
+  - {fileID: 3073153776221543983}
+  - {fileID: 4632240328753361501}
+  - {fileID: 486033293781273914}
+  - {fileID: 122586872199176267}
+  - {fileID: 6103486547407180861}
+  - {fileID: 2161853045169783616}
+  - {fileID: 1630594183896066382}
+  - {fileID: 3557199030995443282}
+  - {fileID: 7167785308279505398}
+  - {fileID: 3573048790961369880}
+  - {fileID: 6665397563613060859}
+  - {fileID: 4811603441229591876}
+  - {fileID: 2511232288273431575}
+  - {fileID: 2273232254777990535}
+  - {fileID: 596651366140700618}
+  - {fileID: 8857079286863479793}
+  - {fileID: 4229308908358248163}
+  - {fileID: 2918365096825011256}
 --- !u!4 &7862135774966095826
 Transform:
   m_ObjectHideFlags: 0
@@ -3462,6 +3681,8 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 3
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
